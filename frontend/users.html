@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Management - CampusGig</title>
+  <link rel="stylesheet" href="css/userStyle.css"/>
+  <link rel="icon" type="image/x-icon" href="../assets/tabIcon.png">
+</head>
+<body>
+
+<header class="user-header">
+  <h1>CampusGig Users</h1>
+  <nav class="user-nav">
+    <a href="index.html">Home</a>
+    <a href="marketplace.html">Marketplace</a>
+    <a href="post.html">Post Project</a>
+  </nav>
+</header>
+
+<section class="form-container">
+  <form id="userForm">
+    <input type="text" id="name" placeholder="Full Name" required/>
+    <input type="email" id="email" placeholder="Student Email" required/>
+    <input type="text" id="number" placeholder="Phone Number" required/>
+    
+    <select id="role" required>
+      <option value="" disabled selected>Select Role</option>
+      <option value="client">Client (Project Poster)</option>
+      <option value="freelancer">Freelancer (Developer/Designer)</option>
+    </select>
+
+    <button type="submit">Add User</button>
+  </form>
+</section>
+
+<section class="table-container">
+  <table id="userTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Number</th>
+        <th>Role</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Users will be dynamically added here -->
+    </tbody>
+  </table>
+</section>
+
+<script src="js/users.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Marketplace - CampusGig</title>
+  <link rel="stylesheet" href="css/marketStyle.css"/>
+  <link rel="icon" type="image/x-icon" href="../assets/tabIcon.png">
+</head>
+<body>
+
+<header class="market-header">
+  <h1>Marketplace</h1>
+  <nav class="market-nav">
+    <a href="index.html">Home</a>
+    <a href="post.html">Post Project</a>
+    <a href="users.html">Users</a>
+  </nav>
+</header>
+
+<section class="filter-box">
+  <label for="budgetRange">Filter by Minimum Budget:</label>
+  <input type="range" id="budgetRange" min="0" max="1000" value="0"/>
+  <span id="budgetValue">₱0</span>
+</section>
+
+<main id="projectFeed"></main>
+<script src="js/marketplace.js"></script>
+</body>
+</html>

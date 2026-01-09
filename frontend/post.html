@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Post a Project - CampusGig</title>
+  <link rel="stylesheet" href="css/postStyle.css"/>
+  <link rel="icon" type="image/x-icon" href="../assets/tabIcon.png">
+</head>
+<body>
+
+<header class="post-header">
+  <h1>Post Project</h1>
+  <nav class="post-nav">
+    <a href="index.html">Home</a>
+    <a href="marketplace.html">Marketplace</a>
+    <a href="users.html">Users</a>
+  </nav>
+</header>
+
+<section class="form-container">
+  <form id="postForm">
+  <input type="number" id="userId" placeholder="Your User ID" required/>
+  <input type="text" id="title" placeholder="Project Title" required/>
+  <textarea id="description" placeholder="Project Description" required></textarea>
+  <input type="number" id="budget" placeholder="Budget $" required/>
+  <label for="deadline">Deadline / Due Date:</label>
+  <input type="date" id="deadline" required/>
+  <button type="submit">Post Project</button>
+</form>
+</section>
+<script src="js/postProject.js"></script>
+</body>
+</html>
